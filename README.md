@@ -46,20 +46,67 @@ Select UTF-8 > Guess optimal character set > Terminus > 10x20 (framebuffer only)
 
 ## Setup GPIO for buttons
 
-Thanks to []prerunnerseth](http://www.sudomod.com/forum/viewtopic.php?t=57) for explaining how to set this up.
+Thanks to [prerunnerseth](http://www.sudomod.com/forum/viewtopic.php?t=57) for explaining how to set this up.
 
-![Raspberry Pinout][ltd7B84.jpg]
+![Raspberry Pinout][https://raw.githubusercontent.com/mrdink/gameboy-zero-setup/master/gpio-pinout.png]
 
-* Up - up
-* Down - down
-* left - left
-* right - right
-* start - enter
-* select - s
-* A - a
-* B - b
-* X - x
-* Y - y
-* L - l
-* R - r
+First, create the following directory in pi user home directory.
+
+```bash
+cd ~
+mkdir Adafruit-Retrogame
+cd Adafruit-Retrogame
+```
+
+Next, download `retrogame.c` to this directory/
+
+```bash
+wget https://raw.githubusercontent.com/mrdink/gameboy-zero-setup/master/retrogame.c
+```
+
+Next, run the following to make the executable retrogame utility.
+
+```bash
+make retrogame
+```
+
+Next, create a custom udev rule which will allow retrogame input events to be visible to applications built using the latest SDL2 library.
+
+```bash
+sudo nano /etc/udev/rules.d/10-retrogame.rules
+```
+
+Copy the following into the console:
+
+```bash
+SUBSYSTEM=="input", ATTRS{name}=="retrogame", ENV{ID_INPUT_KEYBOARD}="1"
+```
+
+Save with Control+O, Enter, Control+X.
+
+Reboot to make sure the configuration has saved. `sudo reboot now`
+
+Now, let's run the utility.
+
+```bash
+cd Adafruit-Retrogame
+sudo +x retrogame
+sudo ./retrogame
+```
+
+If this seems to be working, cancel the process with Control+C.
+
+Next, setup the system to automatically load this process at startup.
+
+```bash
+sudo nano /etc/rc.local
+```
+
+Add the following before `exit 0` at the bottom of the file.
+
+```
+/home/pi/Adafruit-Retrogame/retrogame &
+```
+
+Finally, reboot and test to make sure buttons are working as expected.
 
