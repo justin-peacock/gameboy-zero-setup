@@ -1,5 +1,7 @@
 # Gameboy Zero
 
+![Raspberry Pinout](https://raw.githubusercontent.com/mrdink/gameboy-zero-setup/master/img/gameboy-zero.png "Gameboy Zero")
+
 Checklist for building a custom Gameboy Zero.
 
 ## Disk setup
@@ -24,7 +26,7 @@ network={
 
 ## Configure
 
-First, connect to the pi using ssh and run:
+First, connect to the pi using ssh and run the following:
 
 ```bash
 sudo raspi-config
@@ -48,7 +50,7 @@ Select UTF-8 > Guess optimal character set > Terminus > 10x20 (framebuffer only)
 
 Thanks to [prerunnerseth](http://www.sudomod.com/forum/viewtopic.php?t=57) for explaining how to set this up.
 
-![Raspberry Pinout](https://raw.githubusercontent.com/mrdink/gameboy-zero-setup/master/gpio-pinout.png "Raspberry Pinout")
+![Raspberry Pinout](https://raw.githubusercontent.com/mrdink/gameboy-zero-setup/master/img/gpio-pinout.png "Raspberry Pinout")
 
 First, create the following directory in pi user home directory.
 
@@ -58,7 +60,7 @@ mkdir Adafruit-Retrogame
 cd Adafruit-Retrogame
 ```
 
-Next, download `retrogame.c` to this directory/
+Next, download `retrogame.c`
 
 ```bash
 wget https://raw.githubusercontent.com/mrdink/gameboy-zero-setup/master/retrogame.c
@@ -109,4 +111,21 @@ Add the following before `exit 0` at the bottom of the file.
 ```
 
 Finally, reboot and test to make sure buttons are working as expected.
+
+## Add custom splash screen
+
+[AJRedfern](http://www.sudomod.com/forum/viewtopic.php?f=42&t=1440) did an awesome job creating a splashscreen. I've included his latest (43v2-1) in this repo but be sure to check his thread for any updates.
+
+First, connect to the pi and download the mp4 to the splashscreens directory/
+
+```bash
+cd splashscreens
+wget https://raw.githubusercontent.com/mrdink/gameboy-zero-setup/master/GBZ Splash Screen.mp4
+```
+
+Next, load the Retropie Setup script.
+
+```bash
+sudo bash Retropie-Setup/retropie_setup
+```
 
