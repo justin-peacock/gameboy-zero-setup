@@ -92,7 +92,7 @@ Now, let's run the utility.
 
 ```bash
 cd Adafruit-Retrogame
-sudo +x retrogame
+sudo chmod +x retrogame
 sudo ./retrogame
 ```
 
@@ -119,13 +119,23 @@ Finally, reboot and test to make sure buttons are working as expected.
 First, connect to the pi and download the mp4 to the splashscreens directory/
 
 ```bash
-cd splashscreens
+cd RetroPie/splashscreens
 wget https://github.com/mrdink/gameboy-zero-setup/raw/master/splashscreens/GBZ-Splash-Screen.mp4
 ```
 
 Next, load the Retropie Setup script.
 
 ```bash
-sudo bash Retropie-Setup/retropie_setup
+sudo bash ~/RetroPie-Setup/retropie_setup.sh
 ```
+
+Next, go to:
+
+* Configurations / tools
+* splashscreen
+* Choose splashscreen
+* Own/Extra splashscreens (from /home/pi/RetroPie/splashscreens)
+* Select GBZ-Splash-Screen.mp4
+
+## Add Gameboy optimized theme for Retropie
 
