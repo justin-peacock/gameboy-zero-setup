@@ -120,7 +120,7 @@ First, connect to the pi and download the mp4 to the splashscreens directory/
 
 ```bash
 cd splashscreens
-wget https://raw.githubusercontent.com/mrdink/gameboy-zero-setup/master/GBZ Splash Screen.mp4
+wget https://github.com/mrdink/gameboy-zero-setup/raw/master/splashscreens/GBZ-Splash-Screen.mp4
 ```
 
 Next, load the Retropie Setup script.
