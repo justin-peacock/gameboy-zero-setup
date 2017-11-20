@@ -135,7 +135,23 @@ Next, go to:
 * splashscreen
 * Choose splashscreen
 * Own/Extra splashscreens (from /home/pi/RetroPie/splashscreens)
-* Select GBZ-Splash-Screen.mp4
 
-## Add Gameboy optimized theme for Retropie
+Finally, select GBZ-Splash-Screen.mp4 and perform a reboot.
+
+## Add Gameboy optimized theme for RetroPie
+
+[RxBrad](http://sudomod.com/forum/viewtopic.php?t=1549) has the best theme for a smaller screen in my opinion.
+
+Installation is simple. Run the RetroPie Setup script again.
+
+```bash
+sudo bash ~/RetroPie-Setup/retropie_setup.sh
+```
+
+Next, go to:
+
+* Configurations / tools
+* esthemes
+
+Next, scroll down to find "rxbrad/gbz35" and "rxbrad/gbz35-dark".
 
