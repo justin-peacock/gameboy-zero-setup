@@ -145,7 +145,7 @@ Finally, select GBZ-Splash-Screen.mp4 and perform a reboot.
 Installation is simple. Run the RetroPie Setup script again.
 
 ```bash
-sudo bash ~/RetroPie-Setup/retropie_setup.sh
+sudo ~/RetroPie-Setup/retropie_setup.sh
 ```
 
 Next, go to:
@@ -153,5 +153,23 @@ Next, go to:
 * Configurations / tools
 * esthemes
 
-Next, scroll down to find "rxbrad/gbz35" and "rxbrad/gbz35-dark".
+Next, scroll down to find "rxbrad/gbz35" and "rxbrad/gbz35-dark" hit Enter to install. Now the theme should show up within RetroPie UI Settings.
 
+## [Steven Selph's Scraper](https://github.com/retropie/retropie-setup/wiki/scraper#steven-selphs-scraper)
+
+Steven Selph's scraper is the simplest and best way of scraping roms (provided that the systems are supported.) It can be installed and used from the setup menu using the following steps:
+
+1. (Optional)If you are remotely running this script you must be logged in with pi otherwise it will confuse the scraper
+1. Quit EmulationStation (from the start menu or press F4) and type `sudo ~/RetroPie-Setup/retropie_setup.sh`
+1. In 3.x Choose 'Setup'. In 4.x Choose 'Manage Packages' then 'Optional Packages'.
+1. Select Scraper
+1. Wait for the installation to complete (it may take some time as it has to install various software libraries)
+
+## PWM Audio
+
+Add the following to `/boot/config.text`
+
+```
+dtoverlay=pwm-2chan,pin=18,func=2,pin2=13,func2=4
+disable_audio_dither=1
+```
