@@ -94,16 +94,16 @@ struct {
 	{  23,     KEY_LEFT     },   // Joystick (4 pins)
 	{   0,     KEY_RIGHT    },
 	{   1,     KEY_DOWN     },
-    {  22,     KEY_UP       },
-    {  12,     KEY_ENTER    },   // START
-    {   5,     KEY_S        },   // SELECT
+    	{  22,     KEY_UP       },
+    	{  12,     KEY_ENTER    },   // START
+    	{   5,     KEY_S        },   // SELECT
 	{  16,     KEY_A        },   // A
 	{   6,     KEY_B        },   // B
 	{  19,     KEY_Y        },   // Y
 	{  26,     KEY_X        },   // X
 	{  20,     KEY_R        },   // RT
-    {  21,     KEY_L        },   // LT
-    {  24,     KEY_H        }, // HOTKEY
+    	{  21,     KEY_L        },   // LT
+    	{  24,     KEY_H        },   // HOTKEY
 	{  -1,     -1           } }, // END OF LIST, DO NOT CHANGE
 	// MAME must be configured with 'z' & 'x' as buttons 1 & 2 -
 	// this was required for the accompanying 'menu' utility to
@@ -121,16 +121,16 @@ struct {
 	{  23,     KEY_LEFT     },   // Joystick (4 pins)
 	{   0,     KEY_RIGHT    },
 	{   1,     KEY_DOWN     },
-    {  22,     KEY_UP       },
-    {  12,     KEY_ENTER    },   // START
-    {   5,     KEY_S        },   // SELECT
+    	{  22,     KEY_UP       },
+    	{  12,     KEY_ENTER    },   // START
+    	{   5,     KEY_S        },   // SELECT
 	{  16,     KEY_A        },   // A
 	{   6,     KEY_B        },   // B
 	{  19,     KEY_Y        },   // Y
 	{  26,     KEY_X        },   // X
 	{  20,     KEY_R        },   // RT
-    {  21,     KEY_L        },   // LT
-    {  24,     KEY_H        }, // HOTKEY
+    	{  21,     KEY_L        },   // LT
+    	{  24,     KEY_H        },   // HOTKEY
 	{  -1,     -1           } }; // END OF LIST, DO NOT CHANGE
 
 // A "Vulcan nerve pinch" (holding down a specific button combination
