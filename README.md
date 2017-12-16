@@ -173,3 +173,16 @@ Add the following to `/boot/config.text`
 dtoverlay=pwm-2chan,pin=18,func=2,pin2=13,func2=4
 disable_audio_dither=1
 ```
+
+## PRS Cartridge Reader
+
+Test pins:
+
+* Blue - 15
+* Yellow - 19
+* Purple - 18
+* Orange - 14
+* White - 16
+* Red - 17
+* Green - 3.3V
+* Brown/Tan - Ground
