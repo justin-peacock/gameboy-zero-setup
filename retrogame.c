@@ -91,18 +91,18 @@ struct {
 	// This pin/key table is used if an Adafruit PiTFT display
 	// is detected (e.g. Cupcade or PiGRRL).
 	// Input   Output (from /usr/include/linux/input.h)
-	{  23,     KEY_LEFT     },   // Joystick (4 pins)
-	{   0,     KEY_RIGHT    },
-	{   1,     KEY_DOWN     },
-    {  22,     KEY_UP       },
-    {  12,     KEY_ENTER    },   // START
-    {   5,     KEY_S        },   // SELECT
-	{  16,     KEY_A        },   // A
-	{   6,     KEY_B        },   // B
-	{  19,     KEY_Y        },   // Y
-	{  26,     KEY_X        },   // X
-	{  20,     KEY_R        },   // RT
-    {  21,     KEY_L        },   // LT
+	{   1,     KEY_LEFT     },   // Joystick (4 pins)
+    {  12,     KEY_RIGHT    },
+    {   5,     KEY_DOWN     },
+    {   0,     KEY_UP       },
+    {  13,     KEY_ENTER    },   // START
+    {   6,     KEY_S        },   // SELECT
+    {  26,     KEY_A        },   // A
+    {  20,     KEY_B        },   // B
+    {  19,     KEY_Y        },   // Y
+    {  16,     KEY_X        },   // X
+    {  21,     KEY_R        },   // RT
+    {  14,     KEY_L        },   // LT
     {  24,     KEY_H        },   // HOTKEY
 	{  -1,     -1           } }, // END OF LIST, DO NOT CHANGE
 	// MAME must be configured with 'z' & 'x' as buttons 1 & 2 -
@@ -118,18 +118,18 @@ struct {
 	// (using HDMI or composite instead), as with our original
 	// retro gaming guide.
 	// Input   Output (from /usr/include/linux/input.h)
-	{  23,     KEY_LEFT     },   // Joystick (4 pins)
-	{   0,     KEY_RIGHT    },
-	{   1,     KEY_DOWN     },
-    {  22,     KEY_UP       },
-    {  12,     KEY_ENTER    },   // START
-    {   5,     KEY_S        },   // SELECT
-	{  16,     KEY_A        },   // A
-	{   6,     KEY_B        },   // B
+	{   1,     KEY_LEFT     },   // Joystick (4 pins)
+	{  12,     KEY_RIGHT    },
+	{   5,     KEY_DOWN     },
+    {   0,     KEY_UP       },
+    {  13,     KEY_ENTER    },   // START
+    {   6,     KEY_S        },   // SELECT
+	{  26,     KEY_A        },   // A
+	{  20,     KEY_B        },   // B
 	{  19,     KEY_Y        },   // Y
-	{  26,     KEY_X        },   // X
-	{  20,     KEY_R        },   // RT
-    {  21,     KEY_L        },   // LT
+	{  16,     KEY_X        },   // X
+	{  21,     KEY_R        },   // RT
+    {  14,     KEY_L        },   // LT
     {  24,     KEY_H        },   // HOTKEY
 	{  -1,     -1           } }; // END OF LIST, DO NOT CHANGE
 

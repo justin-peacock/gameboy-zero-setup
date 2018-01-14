@@ -50,7 +50,7 @@ Select UTF-8 > Guess optimal character set > Terminus > 10x20 (framebuffer only)
 
 Thanks to [prerunnerseth](http://www.sudomod.com/forum/viewtopic.php?t=57) for explaining how to set this up.
 
-![Raspberry Pinout](https://raw.githubusercontent.com/mrdink/gameboy-zero-setup/master/img/gpio-pinout.png "Raspberry Pinout")
+![Raspberry Pinout](https://raw.githubusercontent.com/mrdink/gameboy-zero-setup/master/img/gpio-pinout-vet.png "Raspberry Pinout")
 
 First, create the following directory in pi user home directory.
 
